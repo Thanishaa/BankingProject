@@ -14,6 +14,7 @@ public class BankManagement {
 			int max=0;
 			while(result.next()) {
 				max = result.getInt("MAX(Accno)");
+		//thanisha
 			}
 			max+=10;
 			String query="Insert INTO Bank(Accno,Name,Balance) VALUES("+max +",'"+name+"',"+ balance +")";
